@@ -98,7 +98,13 @@ body {
 }
 
 /*****header****/
-.navigation {
+.overrides .navbar-default {
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border-color: transparent !important;
   background: url("./img/navigation2.png") no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -111,7 +117,7 @@ body {
   display: flex;
   margin-top: 20px;
 }
-.navigation__left {
+.navbar .navbar-header {
   float: left;
   font-size: 1.5rem;
   font-weight: 500;
@@ -119,23 +125,23 @@ body {
   margin-left: 10px;
   margin-top: 8px;
 }
-.navigation__left__name {
+.navbar .navbar-header .navigation__left__name {
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-shadow: 1px 1px 2px black, 0 0 25px #bec2d1, 0 0 5px whitesmoke;
 }
-.navigation__left__name:hover {
+.navbar .navbar-header .navigation__left__name:hover {
   -webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
-.navigation__right {
+.navbar .collapse {
   float: right;
 }
-.navigation__navigationBar {
+.navbar .nav {
   display: inline-block;
   padding: 5px 15px 0px 15px;
 }
-.navigation__navigationBar__item {
+.navbar .nav .navigation__navigationBar__item {
   display: inline-block;
   padding: 5px 15px 0px 15px;
   transition: opacity 0.3s ease-in-out;
@@ -145,12 +151,12 @@ body {
   color: white;
   font-weight: bold;
 }
-.navigation__navigationBar__item:hover {
+.navbar .nav .navigation__navigationBar__item:hover {
   color: #bec2d1;
   -webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
-.navigation__navigationBar__item.active {
+.navbar .nav .navigation__navigationBar__item.active {
   color: #bec2d1;
   font-weight: 600;
 }
@@ -486,7 +492,7 @@ video {
 }
 
 .contact-info {
-  font-size: 2;
+  font-size: 3;
 }
 
 /**map**/
