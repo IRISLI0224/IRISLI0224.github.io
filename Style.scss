@@ -97,8 +97,14 @@ body{
 }
 
 /*****header****/
+.overrides .navbar-default{
+	background-color: transparent;
+	
+}
 
-.navigation{
+.navbar{
+	background-color:transparent !important;
+	border-color: transparent !important;
 	background: url("./img/navigation2.png") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -110,32 +116,32 @@ body{
     align-items:stretch;
 	display: flex;
 	margin-top:20px;
-    &__left{
+    .navbar-header{
 		float:left;
 		font-size: 1.5rem;
 		font-weight: 500;
 		flex:1;
 		margin-left: 10px;
 		margin-top:8px;
-		&__name{
+		.navigation__left__name{
 	       color: $banner-title;
 		   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 		   text-shadow: 1px 1px 2px black, 0 0 25px $blue, 0 0 5px $dark-blue;
 		}
-		&__name:hover{
+		.navigation__left__name:hover{
 			-webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 		}
 		
 	}
-	&__right{
+	.collapse{
 		float: right;
 	}
-	&__navigationBar{
+	.nav{
 		
 	     display: inline-block;
 		 padding: 5px 15px 0px 15px;
-		&__item{
+		 .navigation__navigationBar__item{
 			display: inline-block;
 	        padding: 5px 15px 0px 15px;
 			transition: opacity 0.3s ease-in-out;
@@ -146,12 +152,12 @@ body{
 			font-weight: bold;
 		}
 
-		&__item:hover {
+		.navigation__navigationBar__item:hover {
 			color:$blue;
 			-webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 		}
-		&__item.active {
+		.navigation__navigationBar__item.active {
 			color:$blue;
 			font-weight: 600;
 		}
